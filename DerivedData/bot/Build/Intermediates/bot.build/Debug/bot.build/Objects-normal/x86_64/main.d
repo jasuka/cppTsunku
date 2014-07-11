@@ -1,2 +1,2 @@
-dependencies: /Users/jazka/cplusplus/bot/bot/main.cpp \
-  /Users/jazka/cplusplus/bot/bot/IrcBot.h
+dependencies: /Users/jazka/cplusplus/bot/main.cpp \
+  /Users/jazka/cplusplus/bot/IrcBot.h
