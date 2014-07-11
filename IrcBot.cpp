@@ -145,7 +145,7 @@ std::string IrcBot::timeNow()
 
 	time ( &rawtime );
 	timeinfo = localtime ( &rawtime );
-    std::strftime (buffer,80,"%H:%M:%S",timeinfo);
+    strftime (buffer,80,"%H:%M:%S",timeinfo);
     std::string time = buffer;
     return time;
 }
