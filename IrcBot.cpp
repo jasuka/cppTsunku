@@ -104,7 +104,6 @@ void IrcBot::start()
 			case 4:
 					//Join a channel after we connect
 				sendData("JOIN #tsunku");
-                sendData("JOIN #admins");
 			default:
 				break;
 		}
