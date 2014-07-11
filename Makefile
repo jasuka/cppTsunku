@@ -8,3 +8,6 @@ OBJ = IrcBot.o main.o
 
 cppTsunku: $(OBJ)
 	g++ -o $@ $^ $(CFLAGS)
+clean:
+	rm *.o
+	rm cppTsunku
