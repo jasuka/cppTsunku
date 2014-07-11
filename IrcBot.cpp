@@ -58,7 +58,7 @@ void IrcBot::start()
 	hints.ai_socktype = SOCK_STREAM; // TCP stream sockets
 
 	//Setup the structs if error print why
-	int res;
+	unsigned int res;
 	if ((res = getaddrinfo("b0xi.eu",port,&hints,&servinfo)) != 0)
 	{
 		setup = false;
@@ -89,7 +89,7 @@ void IrcBot::start()
 	char buf[MAXDATASIZE];
     std::vector<std::string> words;
 
-	int count = 0;
+	unsigned int count = 0;
 	while (1)
 	{
 		//Count received data
