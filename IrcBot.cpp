@@ -123,7 +123,7 @@ void IrcBot::start()
         }
         
         //buf is the data that is recived
-        std::cout << getTime() << " " << buf;
+        std::cout << timeNow() << " " << buf;
 
 
 		//break if connection closed
@@ -142,19 +142,13 @@ char * IrcBot::timeNow()
 {
 	time_t rawtime;
 	struct tm * timeinfo;
+    char buffer [80];
 
 	time ( &rawtime );
 	timeinfo = localtime ( &rawtime );
-
-	return asctime (timeinfo);
-}
-
-std::string IrcBot::getTime()
-{
-    std::stringstream now;
-    std::time_t localtime =  std::time(nullptr);
-    now << std::put_time(std::localtime(&localtime), "%H:%M:%S");
-    return now.str();
+    strftime (buffer,80,"%H:%M:%S",timeinfo);
+    
+    return buffer;
 }
 
 //Send data to the server
@@ -193,7 +187,7 @@ void IrcBot::msgHandle(std::vector<std::string> words)
         }
         if (words[3].compare(":!time") == 0)
         {
-            sendData("PRIVMSG " + chan + " :The local time is: " + getTime());
+            sendData("PRIVMSG " + chan + " :The local time is: " + timeNow());
         }
         if (words.size() == 5 && words[3].compare(":!nick") == 0)
         {
