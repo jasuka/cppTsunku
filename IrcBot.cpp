@@ -82,7 +82,7 @@ void IrcBot::start()
 
 
 	//Recv some data
-	int numbytes;
+	long numbytes;
 	char buf[MAXDATASIZE];
     std::vector<std::string> words;
 
