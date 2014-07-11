@@ -1,0 +1,24 @@
+Tbot
+v7
+r1
+cCheck dependencies
+
+CBuild AST from /Users/jazka/cplusplus/bot/IrcBot.cpp
+r0
+
+CBuild AST from /Users/jazka/cplusplus/bot/main.cpp
+r0
+
+CCheck dependencies
+r0
+lSLF07#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies18"Check dependenciesd61eb24f7270b941^d8d5c44f7270b941^---0#1#1#--18"Check dependencies36"895C50FA-30EB-46DD-9C55-7D8B847D6846-
+
+CCompileC DerivedData/bot/Build/Intermediates/bot.build/Debug/bot.build/Objects-normal/x86_64/IrcBot.o /Users/jazka/cplusplus/bot/IrcBot.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+r0
+
+CCompileC DerivedData/bot/Build/Intermediates/bot.build/Debug/bot.build/Objects-normal/x86_64/main.o /Users/jazka/cplusplus/bot/main.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+r0
+
+CLd /Users/jazka/cplusplus/bot/DerivedData/bot/Build/Products/Debug/bot normal x86_64
+r0
+
