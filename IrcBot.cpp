@@ -24,8 +24,7 @@
 #include <sys/wait.h>
 #include <signal.h>
 #include <time.h>
-#include <ctime>
-#include <iomanip>
+
 
 #define MAXDATASIZE 100
 
