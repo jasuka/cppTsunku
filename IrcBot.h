@@ -3,7 +3,11 @@
  *
  *  Created on: 15 Jul 2011
  *      Author: tyler
+ *
+ *  Modified July 2014
+ *      Authors: jaska & hrna
  */
+
 #include <string>
 #include <vector>
 
