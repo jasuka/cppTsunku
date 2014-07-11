@@ -1,0 +1,103 @@
+Tbot
+v7
+r1
+cCheck dependencies
+
+CBuild AST from /Users/jazka/cplusplus/bot/bot/IrcBot.cpp
+r0
+
+CBuild AST from /Users/jazka/cplusplus/bot/bot/main.cpp
+r0
+
+CCheck dependencies
+r0
+lSLF07#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies18"Check dependencies6d8e8f106f70b941^882b93106f70b941^---0#1#1#--18"Check dependencies36"FF513ABB-DC3F-43E8-B5DE-B628BA8D7736-
+
+CCompileC DerivedData/bot/Build/Intermediates/bot.build/Debug/bot.build/Objects-normal/x86_64/IrcBot.o /Users/jazka/cplusplus/bot/bot/IrcBot.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+s426797674.319709
+e426797674.818158
+r1
+xCompileC
+xDerivedData/bot/Build/Intermediates/bot.build/Debug/bot.build/Objects-normal/x86_64/IrcBot.o
+x/Users/jazka/cplusplus/bot/bot/IrcBot.cpp
+xnormal
+xx86_64
+xc++
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/jazka/cplusplus/bot/bot/IrcBot.cpp
+d/Users/jazka/cplusplus/bot/bot/IrcBot.h
+o/Users/jazka/cplusplus/bot/bot/IrcBot.cpp:110:14: warning: implicit conversion loses integer precision: 'ssize_t' (aka 'long') to 'int' [-Wshorten-64-to-32]
+o                numbytes = recv(s,buf,MAXDATASIZE-1,0);
+o                         ~ ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+o1 warning generated.
+lSLF07#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection49"Compile /Users/jazka/cplusplus/bot/bot/IrcBot.cpp178"CompileC DerivedData/bot/Build/Intermediates/bot.build/Debug/bot.build/Objects-normal/x86_64/IrcBot.o bot/IrcBot.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler63ef516a6a70b941^ad89d16a6a70b941^-289"/Users/jazka/cplusplus/bot/bot/IrcBot.cpp:110:14: warning: implicit conversion loses integer precision: 'ssize_t' (aka 'long') to 'int' [-Wshorten-64-to-32]                numbytes = recv(s,buf,MAXDATASIZE-1,0);                         ~ ^~~~~~~~~~~~~~~~~~~~~~~~~~~1 warning generated.1(36%IDEClangDiagnosticActivityLogMessage2@76"Implicit conversion loses integer precision: 'ssize_t' (aka 'long') to 'int'-426797674#18446744073709551615#0#-1#27"com.apple.dt.IDE.diagnostic23%DVTTextDocumentLocation3@48"file:///Users/jazka/cplusplus/bot/bot/IrcBot.cpp0000000000000000^109#13#109#13#1988#0#1#22"Value Conversion Issue2(3@48"file:///Users/jazka/cplusplus/bot/bot/IrcBot.cpp0000000000000000^109#13#109#40#1988#26#1#3@48"file:///Users/jazka/cplusplus/bot/bot/IrcBot.cpp0000000000000000^109#11#109#12#1986#0#1#-0#0#1#-19%DVTDocumentLocation4@48"file:///Users/jazka/cplusplus/bot/bot/IrcBot.cpp0000000000000000^3038"CompileC DerivedData/bot/Build/Intermediates/bot.build/Debug/bot.build/Objects-normal/x86_64/IrcBot.o bot/IrcBot.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/jazka/cplusplus/bot    export LANG=en_US.US-ASCII    /Applications/Xcode6-Beta3.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu++11 -stdlib=libc++ -fmodules -fmodules-cache-path=/Users/jazka/cplusplus/bot/DerivedData/ModuleCache -fmodules-prune-interval=86400 -fmodules-prune-after=345600 -Wnon-modular-include-in-framework-module -Werror=non-modular-include-in-framework-module -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Wunreachable-code -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wconditional-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -DDEBUG=1 -isysroot /Applications/Xcode6-Beta3.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.10 -g -fvisibility-inlines-hidden -Wno-sign-conversion -iquote /Users/jazka/cplusplus/bot/DerivedData/bot/Build/Intermediates/bot.build/Debug/bot.build/bot-generated-files.hmap -I/Users/jazka/cplusplus/bot/DerivedData/bot/Build/Intermediates/bot.build/Debug/bot.build/bot-own-target-headers.hmap -I/Users/jazka/cplusplus/bot/DerivedData/bot/Build/Intermediates/bot.build/Debug/bot.build/bot-all-target-headers.hmap -iquote /Users/jazka/cplusplus/bot/DerivedData/bot/Build/Intermediates/bot.build/Debug/bot.build/bot-project-headers.hmap -I/Users/jazka/cplusplus/bot/DerivedData/bot/Build/Products/Debug/include -I/Applications/Xcode6-Beta3.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/jazka/cplusplus/bot/DerivedData/bot/Build/Intermediates/bot.build/Debug/bot.build/DerivedSources/x86_64 -I/Users/jazka/cplusplus/bot/DerivedData/bot/Build/Intermediates/bot.build/Debug/bot.build/DerivedSources -F/Users/jazka/cplusplus/bot/DerivedData/bot/Build/Products/Debug -MMD -MT dependencies -MF /Users/jazka/cplusplus/bot/DerivedData/bot/Build/Intermediates/bot.build/Debug/bot.build/Objects-normal/x86_64/IrcBot.d --serialize-diagnostics /Users/jazka/cplusplus/bot/DerivedData/bot/Build/Intermediates/bot.build/Debug/bot.build/Objects-normal/x86_64/IrcBot.dia -c /Users/jazka/cplusplus/bot/bot/IrcBot.cpp -o /Users/jazka/cplusplus/bot/DerivedData/bot/Build/Intermediates/bot.build/Debug/bot.build/Objects-normal/x86_64/IrcBot.o36"348350CD-117D-4E0A-9481-679B9566DFB8-
+b02D4C7BF-870D-46B7-BF4E-9EDAC4978CE1
+
+CCompileC DerivedData/bot/Build/Intermediates/bot.build/Debug/bot.build/Objects-normal/x86_64/main.o /Users/jazka/cplusplus/bot/bot/main.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+s426796970.759662
+e426796971.068374
+r1
+xCompileC
+xDerivedData/bot/Build/Intermediates/bot.build/Debug/bot.build/Objects-normal/x86_64/main.o
+x/Users/jazka/cplusplus/bot/bot/main.cpp
+xnormal
+xx86_64
+xc++
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/jazka/cplusplus/bot/bot/main.cpp
+d/Users/jazka/cplusplus/bot/bot/IrcBot.h
+lSLF07#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection47"Compile /Users/jazka/cplusplus/bot/bot/main.cpp174"CompileC DerivedData/bot/Build/Intermediates/bot.build/Debug/bot.build/Objects-normal/x86_64/main.o bot/main.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler789cc2aa6770b941^8c8111ab6770b941^---0#0#1#-19%DVTDocumentLocation2@46"file:///Users/jazka/cplusplus/bot/bot/main.cpp0000000000000000^3026"CompileC DerivedData/bot/Build/Intermediates/bot.build/Debug/bot.build/Objects-normal/x86_64/main.o bot/main.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/jazka/cplusplus/bot    export LANG=en_US.US-ASCII    /Applications/Xcode6-Beta3.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu++11 -stdlib=libc++ -fmodules -fmodules-cache-path=/Users/jazka/cplusplus/bot/DerivedData/ModuleCache -fmodules-prune-interval=86400 -fmodules-prune-after=345600 -Wnon-modular-include-in-framework-module -Werror=non-modular-include-in-framework-module -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Wunreachable-code -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wconditional-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -DDEBUG=1 -isysroot /Applications/Xcode6-Beta3.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.10 -g -fvisibility-inlines-hidden -Wno-sign-conversion -iquote /Users/jazka/cplusplus/bot/DerivedData/bot/Build/Intermediates/bot.build/Debug/bot.build/bot-generated-files.hmap -I/Users/jazka/cplusplus/bot/DerivedData/bot/Build/Intermediates/bot.build/Debug/bot.build/bot-own-target-headers.hmap -I/Users/jazka/cplusplus/bot/DerivedData/bot/Build/Intermediates/bot.build/Debug/bot.build/bot-all-target-headers.hmap -iquote /Users/jazka/cplusplus/bot/DerivedData/bot/Build/Intermediates/bot.build/Debug/bot.build/bot-project-headers.hmap -I/Users/jazka/cplusplus/bot/DerivedData/bot/Build/Products/Debug/include -I/Applications/Xcode6-Beta3.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/jazka/cplusplus/bot/DerivedData/bot/Build/Intermediates/bot.build/Debug/bot.build/DerivedSources/x86_64 -I/Users/jazka/cplusplus/bot/DerivedData/bot/Build/Intermediates/bot.build/Debug/bot.build/DerivedSources -F/Users/jazka/cplusplus/bot/DerivedData/bot/Build/Products/Debug -MMD -MT dependencies -MF /Users/jazka/cplusplus/bot/DerivedData/bot/Build/Intermediates/bot.build/Debug/bot.build/Objects-normal/x86_64/main.d --serialize-diagnostics /Users/jazka/cplusplus/bot/DerivedData/bot/Build/Intermediates/bot.build/Debug/bot.build/Objects-normal/x86_64/main.dia -c /Users/jazka/cplusplus/bot/bot/main.cpp -o /Users/jazka/cplusplus/bot/DerivedData/bot/Build/Intermediates/bot.build/Debug/bot.build/Objects-normal/x86_64/main.o36"79094E82-BD0D-4ECB-AFA6-786A21DD32DD-
+bFA7533A2-3533-44C7-B84E-085567EF6773
+
+CLd /Users/jazka/cplusplus/bot/DerivedData/bot/Build/Products/Debug/bot normal x86_64
+s426797674.818619
+e426797674.841939
+r1
+xLd
+x/Users/jazka/cplusplus/bot/DerivedData/bot/Build/Products/Debug/bot
+xnormal
+xx86_64
+d/Users/jazka/cplusplus/bot/DerivedData/bot/Build/Intermediates/bot.build/Debug/bot.build/Objects-normal/x86_64/bot.LinkFileList
+d/Users/jazka/cplusplus/bot/DerivedData/bot/Build/Intermediates/bot.build/Debug/bot.build/Objects-normal/x86_64/main.o
+d/Users/jazka/cplusplus/bot/DerivedData/bot/Build/Intermediates/bot.build/Debug/bot.build/Objects-normal/x86_64/IrcBot.o
+d/Applications/Xcode6-Beta3.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk/usr/lib/libc++.dylib
+d/Applications/Xcode6-Beta3.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk/usr/lib/libSystem.dylib
+d/Applications/Xcode6-Beta3.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/6.0/lib/darwin/libclang_rt.osx.a
+d/Applications/Xcode6-Beta3.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk/usr/lib/system/libcache.dylib
+d/Applications/Xcode6-Beta3.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk/usr/lib/system/libcommonCrypto.dylib
+d/Applications/Xcode6-Beta3.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk/usr/lib/system/libcompiler_rt.dylib
+d/Applications/Xcode6-Beta3.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk/usr/lib/system/libcopyfile.dylib
+d/Applications/Xcode6-Beta3.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk/usr/lib/system/libcorecrypto.dylib
+d/Applications/Xcode6-Beta3.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk/usr/lib/system/libdispatch.dylib
+d/Applications/Xcode6-Beta3.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk/usr/lib/system/libdyld.dylib
+d/Applications/Xcode6-Beta3.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk/usr/lib/system/libkeymgr.dylib
+d/Applications/Xcode6-Beta3.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk/usr/lib/system/liblaunch.dylib
+d/Applications/Xcode6-Beta3.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk/usr/lib/system/libmacho.dylib
+d/Applications/Xcode6-Beta3.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk/usr/lib/system/libquarantine.dylib
+d/Applications/Xcode6-Beta3.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk/usr/lib/system/libremovefile.dylib
+d/Applications/Xcode6-Beta3.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk/usr/lib/system/libsystem_asl.dylib
+d/Applications/Xcode6-Beta3.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk/usr/lib/system/libsystem_blocks.dylib
+d/Applications/Xcode6-Beta3.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk/usr/lib/system/libsystem_c.dylib
+d/Applications/Xcode6-Beta3.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk/usr/lib/system/libsystem_configuration.dylib
+d/Applications/Xcode6-Beta3.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk/usr/lib/system/libsystem_coreservices.dylib
+d/Applications/Xcode6-Beta3.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk/usr/lib/system/libsystem_coretls.dylib
+d/Applications/Xcode6-Beta3.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk/usr/lib/system/libsystem_dnssd.dylib
+d/Applications/Xcode6-Beta3.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk/usr/lib/system/libsystem_info.dylib
+d/Applications/Xcode6-Beta3.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk/usr/lib/system/libsystem_kernel.dylib
+d/Applications/Xcode6-Beta3.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk/usr/lib/system/libsystem_m.dylib
+d/Applications/Xcode6-Beta3.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk/usr/lib/system/libsystem_malloc.dylib
+d/Applications/Xcode6-Beta3.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk/usr/lib/system/libsystem_network.dylib
+d/Applications/Xcode6-Beta3.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk/usr/lib/system/libsystem_networkextension.dylib
+d/Applications/Xcode6-Beta3.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk/usr/lib/system/libsystem_notify.dylib
+d/Applications/Xcode6-Beta3.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk/usr/lib/system/libsystem_platform.dylib
+d/Applications/Xcode6-Beta3.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk/usr/lib/system/libsystem_pthread.dylib
+d/Applications/Xcode6-Beta3.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk/usr/lib/system/libsystem_sandbox.dylib
+d/Applications/Xcode6-Beta3.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk/usr/lib/system/libsystem_secinit.dylib
+d/Applications/Xcode6-Beta3.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk/usr/lib/system/libsystem_stats.dylib
+d/Applications/Xcode6-Beta3.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk/usr/lib/system/libsystem_trace.dylib
+d/Applications/Xcode6-Beta3.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk/usr/lib/system/libunc.dylib
+d/Applications/Xcode6-Beta3.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk/usr/lib/system/libunwind.dylib
+d/Applications/Xcode6-Beta3.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk/usr/lib/system/libxpc.dylib
+lSLF07#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection72"Link /Users/jazka/cplusplus/bot/DerivedData/bot/Build/Products/Debug/bot57"Ld DerivedData/bot/Build/Products/Debug/bot normal x86_64499cd16a6a70b941^a489d76a6a70b941^---0#0#1#--923"Ld DerivedData/bot/Build/Products/Debug/bot normal x86_64    cd /Users/jazka/cplusplus/bot    export MACOSX_DEPLOYMENT_TARGET=10.10    /Applications/Xcode6-Beta3.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ -arch x86_64 -isysroot /Applications/Xcode6-Beta3.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk -L/Users/jazka/cplusplus/bot/DerivedData/bot/Build/Products/Debug -F/Users/jazka/cplusplus/bot/DerivedData/bot/Build/Products/Debug -filelist /Users/jazka/cplusplus/bot/DerivedData/bot/Build/Intermediates/bot.build/Debug/bot.build/Objects-normal/x86_64/bot.LinkFileList -mmacosx-version-min=10.10 -stdlib=libc++ -Xlinker -dependency_info -Xlinker /Users/jazka/cplusplus/bot/DerivedData/bot/Build/Intermediates/bot.build/Debug/bot.build/Objects-normal/x86_64/bot_dependency_info.dat -o /Users/jazka/cplusplus/bot/DerivedData/bot/Build/Products/Debug/bot36"CDBD27DD-B0FB-4ECF-8CD2-52B703734FBF-
+b02D4C7BF-870D-46B7-BF4E-9EDAC4978CE1
+
