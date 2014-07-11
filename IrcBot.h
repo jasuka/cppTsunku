@@ -27,14 +27,11 @@ private:
 	const char *nick;
 	const char *usr;
 
-	char * timeNow();
-
-    std::string getTime();
+    std::string timeNow();
     
 	bool sendData(std::string msg);
-
 	void msgHandle(std::vector<std::string>);
-
+    
     std::vector<std::string> splitWords(char *buf);
     
 };

@@ -137,17 +137,17 @@ void IrcBot::start()
 }
 
 // Returns the current time
-char * IrcBot::timeNow()
+std::string IrcBot::timeNow()
 {
 	time_t rawtime;
 	struct tm * timeinfo;
-    char buffer [80];
+    char buffer[80];
 
 	time ( &rawtime );
 	timeinfo = localtime ( &rawtime );
-    strftime (buffer,80,"%H:%M:%S",timeinfo);
-    
-    return buffer;
+    std::strftime (buffer,80,"%H:%M:%S",timeinfo);
+    std::string time = buffer;
+    return time;
 }
 
 //Send data to the server
