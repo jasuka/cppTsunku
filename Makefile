@@ -1,5 +1,5 @@
 CC=g++
-CFLAGS=-I. -O2
+CFLAGS= -O2 -std=c++0x -Wall -I.
 DEPS = IrcBot.h
 OBJ = IrcBot.o main.o 
 
