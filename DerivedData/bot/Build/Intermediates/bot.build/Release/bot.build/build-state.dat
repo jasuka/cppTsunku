@@ -1,163 +1,0 @@
-Tbot
-v7
-r1
-cCheck dependencies
-cCompileC DerivedData/bot/Build/Intermediates/bot.build/Release/bot.build/Objects-normal/x86_64/main.o /Users/jazka/cplusplus/bot/bot/main.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC DerivedData/bot/Build/Intermediates/bot.build/Release/bot.build/Objects-normal/x86_64/IrcBot.o /Users/jazka/cplusplus/bot/bot/IrcBot.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
-cLd /Users/jazka/cplusplus/bot/DerivedData/bot/Build/Products/Release/bot normal x86_64
-cGenerateDSYMFile /Users/jazka/cplusplus/bot/DerivedData/bot/Build/Products/Release/bot.dSYM /Users/jazka/cplusplus/bot/DerivedData/bot/Build/Products/Release/bot
-
-CBuild AST from /Users/jazka/cplusplus/bot/bot/IrcBot.cpp
-r0
-
-CBuild AST from /Users/jazka/cplusplus/bot/bot/main.cpp
-r0
-
-CCheck dependencies
-r0
-lSLF07#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies18"Check dependenciesd23aca43f46fb941^098cd143f46fb941^---0#1#1#--18"Check dependencies36"27FE8CC5-9960-467B-9095-EB8328A359B4-
-
-CCompileC DerivedData/bot/Build/Intermediates/bot.build/Release/bot.build/Objects-normal/x86_64/IrcBot.o /Users/jazka/cplusplus/bot/bot/IrcBot.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
-s426767427.819038
-e426767428.135029
-r1
-xCompileC
-xDerivedData/bot/Build/Intermediates/bot.build/Release/bot.build/Objects-normal/x86_64/IrcBot.o
-x/Users/jazka/cplusplus/bot/bot/IrcBot.cpp
-xnormal
-xx86_64
-xc++
-xcom.apple.compilers.llvm.clang.1_0.compiler
-d/Users/jazka/cplusplus/bot/bot/IrcBot.cpp
-d/Users/jazka/cplusplus/bot/bot/IrcBot.h
-o/Users/jazka/cplusplus/bot/bot/IrcBot.cpp:47:9: warning: ISO C++11 does not allow conversion from string literal to 'char *' [-Wc++11-compat-deprecated-writable-strings]
-o        port = "6667";
-o               ^
-o/Users/jazka/cplusplus/bot/bot/IrcBot.cpp:101:14: warning: ISO C++11 does not allow conversion from string literal to 'char *' [-Wc++11-compat-deprecated-writable-strings]
-o                                sendData("JOIN #tsunku\r\n");
-o                                         ^
-o/Users/jazka/cplusplus/bot/bot/IrcBot.cpp:123:22: warning: ISO C++11 does not allow conversion from string literal to 'char *' [-Wc++11-compat-deprecated-writable-strings]
-o                if (charSearch(buf,"PING"))
-o                                   ^
-o/Users/jazka/cplusplus/bot/bot/IrcBot.cpp:109:14: warning: implicit conversion loses integer precision: 'ssize_t' (aka 'long') to 'int' [-Wshorten-64-to-32]
-o                numbytes = recv(s,buf,MAXDATASIZE-1,0);
-o                         ~ ^~~~~~~~~~~~~~~~~~~~~~~~~~~
-o/Users/jazka/cplusplus/bot/bot/IrcBot.cpp:142:12: warning: implicit conversion loses integer precision: 'size_t' (aka 'unsigned long') to 'int' [-Wshorten-64-to-32]
-o        int len = strlen(toSearch);
-o            ~~~   ^~~~~~~~~~~~~~~~
-o/Users/jazka/cplusplus/bot/bot/IrcBot.cpp:143:15: warning: implicit conversion loses integer precision: 'size_t' (aka 'unsigned long') to 'int' [-Wshorten-64-to-32]
-o        int forLen = strlen(searchFor); // The length of the searchfor field
-o            ~~~~~~   ^~~~~~~~~~~~~~~~~
-o/Users/jazka/cplusplus/bot/bot/IrcBot.cpp:173:21: warning: ISO C++11 does not allow conversion from string literal to 'char *' [-Wc++11-compat-deprecated-writable-strings]
-o        if (charSearch(buf,"/MOTD") == true)
-o                           ^
-o/Users/jazka/cplusplus/bot/bot/IrcBot.cpp:194:12: warning: implicit conversion loses integer precision: 'size_t' (aka 'unsigned long') to 'int' [-Wshorten-64-to-32]
-o        int len = strlen(msg);
-o            ~~~   ^~~~~~~~~~~
-o/Users/jazka/cplusplus/bot/bot/IrcBot.cpp:195:19: warning: implicit conversion loses integer precision: 'ssize_t' (aka 'long') to 'int' [-Wshorten-64-to-32]
-o        int bytes_sent = send(s,msg,len,0);
-o            ~~~~~~~~~~   ^~~~~~~~~~~~~~~~~
-o/Users/jazka/cplusplus/bot/bot/IrcBot.cpp:209:20: warning: ISO C++11 does not allow conversion from string literal to 'char *' [-Wc++11-compat-deprecated-writable-strings]
-o        char * toSearch = "PING ";
-o                          ^
-o/Users/jazka/cplusplus/bot/bot/IrcBot.cpp:231:21: warning: implicit conversion loses integer precision: 'unsigned long' to 'int' [-Wshorten-64-to-32]
-o                                        for (int x = (i+strlen(toSearch)); x < strlen(buf);x++)
-o                                                 ~    ~^~~~~~~~~~~~~~~~~
-o/Users/jazka/cplusplus/bot/bot/IrcBot.cpp:247:21: warning: implicit conversion loses integer precision: 'unsigned long' to 'int' [-Wshorten-64-to-32]
-o                                        for (int x = (i+strlen(toSearch)); x < strlen(buf);x++)
-o                                                 ~    ~^~~~~~~~~~~~~~~~~
-o/Users/jazka/cplusplus/bot/bot/IrcBot.cpp:273:21: warning: ISO C++11 does not allow conversion from string literal to 'char *' [-Wc++11-compat-deprecated-writable-strings]
-o        if (charSearch(buf,"hi scooby"))
-o                           ^
-o/Users/jazka/cplusplus/bot/bot/IrcBot.cpp:275:12: warning: ISO C++11 does not allow conversion from string literal to 'char *' [-Wc++11-compat-deprecated-writable-strings]
-o                sendData("PRIVMSG #ubuntu :hi, hows it going\r\n");
-o                         ^
-o14 warnings generated.
-lSLF07#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection49"Compile /Users/jazka/cplusplus/bot/bot/IrcBot.cpp180"CompileC DerivedData/bot/Build/Intermediates/bot.build/Release/bot.build/Objects-normal/x86_64/IrcBot.o bot/IrcBot.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler88bcd143f46fb941^53912244f46fb941^-3646"/Users/jazka/cplusplus/bot/bot/IrcBot.cpp:47:9: warning: ISO C++11 does not allow conversion from string literal to 'char *' [-Wc++11-compat-deprecated-writable-strings]        port = "6667";               ^/Users/jazka/cplusplus/bot/bot/IrcBot.cpp:101:14: warning: ISO C++11 does not allow conversion from string literal to 'char *' [-Wc++11-compat-deprecated-writable-strings]                                sendData("JOIN #tsunku\r\n");                                         ^/Users/jazka/cplusplus/bot/bot/IrcBot.cpp:123:22: warning: ISO C++11 does not allow conversion from string literal to 'char *' [-Wc++11-compat-deprecated-writable-strings]                if (charSearch(buf,"PING"))                                   ^/Users/jazka/cplusplus/bot/bot/IrcBot.cpp:109:14: warning: implicit conversion loses integer precision: 'ssize_t' (aka 'long') to 'int' [-Wshorten-64-to-32]                numbytes = recv(s,buf,MAXDATASIZE-1,0);                         ~ ^~~~~~~~~~~~~~~~~~~~~~~~~~~/Users/jazka/cplusplus/bot/bot/IrcBot.cpp:142:12: warning: implicit conversion loses integer precision: 'size_t' (aka 'unsigned long') to 'int' [-Wshorten-64-to-32]        int len = strlen(toSearch);            ~~~   ^~~~~~~~~~~~~~~~/Users/jazka/cplusplus/bot/bot/IrcBot.cpp:143:15: warning: implicit conversion loses integer precision: 'size_t' (aka 'unsigned long') to 'int' [-Wshorten-64-to-32]        int forLen = strlen(searchFor); // The length of the searchfor field            ~~~~~~   ^~~~~~~~~~~~~~~~~/Users/jazka/cplusplus/bot/bot/IrcBot.cpp:173:21: warning: ISO C++11 does not allow conversion from string literal to 'char *' [-Wc++11-compat-deprecated-writable-strings]        if (charSearch(buf,"/MOTD") == true)                           ^/Users/jazka/cplusplus/bot/bot/IrcBot.cpp:194:12: warning: implicit conversion loses integer precision: 'size_t' (aka 'unsigned long') to 'int' [-Wshorten-64-to-32]        int len = strlen(msg);            ~~~   ^~~~~~~~~~~/Users/jazka/cplusplus/bot/bot/IrcBot.cpp:195:19: warning: implicit conversion loses integer precision: 'ssize_t' (aka 'long') to 'int' [-Wshorten-64-to-32]        int bytes_sent = send(s,msg,len,0);            ~~~~~~~~~~   ^~~~~~~~~~~~~~~~~/Users/jazka/cplusplus/bot/bot/IrcBot.cpp:209:20: warning: ISO C++11 does not allow conversion from string literal to 'char *' [-Wc++11-compat-deprecated-writable-strings]        char * toSearch = "PING ";                          ^/Users/jazka/cplusplus/bot/bot/IrcBot.cpp:231:21: warning: implicit conversion loses integer precision: 'unsigned long' to 'int' [-Wshorten-64-to-32]                                        for (int x = (i+strlen(toSearch)); x < strlen(buf);x++)                                                 ~    ~^~~~~~~~~~~~~~~~~/Users/jazka/cplusplus/bot/bot/IrcBot.cpp:247:21: warning: implicit conversion loses integer precision: 'unsigned long' to 'int' [-Wshorten-64-to-32]                                        for (int x = (i+strlen(toSearch)); x < strlen(buf);x++)                                                 ~    ~^~~~~~~~~~~~~~~~~/Users/jazka/cplusplus/bot/bot/IrcBot.cpp:273:21: warning: ISO C++11 does not allow conversion from string literal to 'char *' [-Wc++11-compat-deprecated-writable-strings]        if (charSearch(buf,"hi scooby"))                           ^/Users/jazka/cplusplus/bot/bot/IrcBot.cpp:275:12: warning: ISO C++11 does not allow conversion from string literal to 'char *' [-Wc++11-compat-deprecated-writable-strings]                sendData("PRIVMSG #ubuntu :hi, hows it going\r\n");                         ^14 warnings generated.14(36%IDEClangDiagnosticActivityLogMessage2@67"ISO C++11 does not allow conversion from string literal to 'char *'-426767428#18446744073709551615#0#-1#27"com.apple.dt.IDE.diagnostic23%DVTTextDocumentLocation3@48"file:///Users/jazka/cplusplus/bot/bot/IrcBot.cpp0000000000000000^46#8#46#8#656#0#1#14"Semantic Issue--2@67"ISO C++11 does not allow conversion from string literal to 'char *'-426767428#18446744073709551615#0#-1#27"com.apple.dt.IDE.diagnostic3@48"file:///Users/jazka/cplusplus/bot/bot/IrcBot.cpp0000000000000000^100#13#100#13#1766#0#1#14"Semantic Issue--2@67"ISO C++11 does not allow conversion from string literal to 'char *'-426767428#18446744073709551615#0#-1#27"com.apple.dt.IDE.diagnostic3@48"file:///Users/jazka/cplusplus/bot/bot/IrcBot.cpp0000000000000000^122#21#122#21#2181#0#1#14"Semantic Issue--2@76"Implicit conversion loses integer precision: 'ssize_t' (aka 'long') to 'int'-426767428#18446744073709551615#0#-1#27"com.apple.dt.IDE.diagnostic3@48"file:///Users/jazka/cplusplus/bot/bot/IrcBot.cpp0000000000000000^108#13#108#13#1852#0#1#22"Value Conversion Issue2(3@48"file:///Users/jazka/cplusplus/bot/bot/IrcBot.cpp0000000000000000^108#13#108#40#1852#26#1#3@48"file:///Users/jazka/cplusplus/bot/bot/IrcBot.cpp0000000000000000^108#11#108#12#1850#0#1#-2@84"Implicit conversion loses integer precision: 'size_t' (aka 'unsigned long') to 'int'-426767428#18446744073709551615#0#-1#27"com.apple.dt.IDE.diagnostic3@48"file:///Users/jazka/cplusplus/bot/bot/IrcBot.cpp0000000000000000^141#11#141#11#2481#0#1#22"Value Conversion Issue2(3@48"file:///Users/jazka/cplusplus/bot/bot/IrcBot.cpp0000000000000000^141#11#141#27#2481#15#1#3@48"file:///Users/jazka/cplusplus/bot/bot/IrcBot.cpp0000000000000000^141#5#141#8#2475#0#1#-2@84"Implicit conversion loses integer precision: 'size_t' (aka 'unsigned long') to 'int'-426767428#18446744073709551615#0#-1#27"com.apple.dt.IDE.diagnostic3@48"file:///Users/jazka/cplusplus/bot/bot/IrcBot.cpp0000000000000000^142#14#142#14#2513#0#1#22"Value Conversion Issue2(3@48"file:///Users/jazka/cplusplus/bot/bot/IrcBot.cpp0000000000000000^142#14#142#31#2513#16#1#3@48"file:///Users/jazka/cplusplus/bot/bot/IrcBot.cpp0000000000000000^142#5#142#11#2504#0#1#-2@67"ISO C++11 does not allow conversion from string literal to 'char *'-426767428#18446744073709551615#0#-1#27"com.apple.dt.IDE.diagnostic3@48"file:///Users/jazka/cplusplus/bot/bot/IrcBot.cpp0000000000000000^172#20#172#20#3188#0#1#14"Semantic Issue--2@84"Implicit conversion loses integer precision: 'size_t' (aka 'unsigned long') to 'int'-426767428#18446744073709551615#0#-1#27"com.apple.dt.IDE.diagnostic3@48"file:///Users/jazka/cplusplus/bot/bot/IrcBot.cpp0000000000000000^193#11#193#11#3518#0#1#22"Value Conversion Issue2(3@48"file:///Users/jazka/cplusplus/bot/bot/IrcBot.cpp0000000000000000^193#11#193#22#3518#10#1#3@48"file:///Users/jazka/cplusplus/bot/bot/IrcBot.cpp0000000000000000^193#5#193#8#3512#0#1#-2@76"Implicit conversion loses integer precision: 'ssize_t' (aka 'long') to 'int'-426767428#18446744073709551615#0#-1#27"com.apple.dt.IDE.diagnostic3@48"file:///Users/jazka/cplusplus/bot/bot/IrcBot.cpp0000000000000000^194#18#194#18#3549#0#1#22"Value Conversion Issue2(3@48"file:///Users/jazka/cplusplus/bot/bot/IrcBot.cpp0000000000000000^194#18#194#35#3549#16#1#3@48"file:///Users/jazka/cplusplus/bot/bot/IrcBot.cpp0000000000000000^194#5#194#15#3536#0#1#-2@67"ISO C++11 does not allow conversion from string literal to 'char *'-426767428#18446744073709551615#0#-1#27"com.apple.dt.IDE.diagnostic3@48"file:///Users/jazka/cplusplus/bot/bot/IrcBot.cpp0000000000000000^208#19#208#19#3801#0#1#14"Semantic Issue--2@69"Implicit conversion loses integer precision: 'unsigned long' to 'int'-426767428#18446744073709551615#0#-1#27"com.apple.dt.IDE.diagnostic3@48"file:///Users/jazka/cplusplus/bot/bot/IrcBot.cpp0000000000000000^230#20#230#20#4267#0#1#22"Value Conversion Issue2(3@48"file:///Users/jazka/cplusplus/bot/bot/IrcBot.cpp0000000000000000^230#19#230#37#4266#17#1#3@48"file:///Users/jazka/cplusplus/bot/bot/IrcBot.cpp0000000000000000^230#14#230#15#4261#0#1#-2@69"Implicit conversion loses integer precision: 'unsigned long' to 'int'-426767428#18446744073709551615#0#-1#27"com.apple.dt.IDE.diagnostic3@48"file:///Users/jazka/cplusplus/bot/bot/IrcBot.cpp0000000000000000^246#20#246#20#4591#0#1#22"Value Conversion Issue2(3@48"file:///Users/jazka/cplusplus/bot/bot/IrcBot.cpp0000000000000000^246#19#246#37#4590#17#1#3@48"file:///Users/jazka/cplusplus/bot/bot/IrcBot.cpp0000000000000000^246#14#246#15#4585#0#1#-2@67"ISO C++11 does not allow conversion from string literal to 'char *'-426767428#18446744073709551615#0#-1#27"com.apple.dt.IDE.diagnostic3@48"file:///Users/jazka/cplusplus/bot/bot/IrcBot.cpp0000000000000000^272#20#272#20#5015#0#1#14"Semantic Issue--2@67"ISO C++11 does not allow conversion from string literal to 'char *'-426767428#18446744073709551615#0#-1#27"com.apple.dt.IDE.diagnostic3@48"file:///Users/jazka/cplusplus/bot/bot/IrcBot.cpp0000000000000000^274#11#274#11#5043#0#1#14"Semantic Issue--0#0#1#-19%DVTDocumentLocation4@48"file:///Users/jazka/cplusplus/bot/bot/IrcBot.cpp0000000000000000^3072"CompileC DerivedData/bot/Build/Intermediates/bot.build/Release/bot.build/Objects-normal/x86_64/IrcBot.o bot/IrcBot.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/jazka/cplusplus/bot    export LANG=en_US.US-ASCII    /Applications/Xcode6-Beta3.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu++11 -stdlib=libc++ -fmodules -fmodules-cache-path=/Users/jazka/cplusplus/bot/DerivedData/ModuleCache -fmodules-prune-interval=86400 -fmodules-prune-after=345600 -Wnon-modular-include-in-framework-module -Werror=non-modular-include-in-framework-module -Wno-trigraphs -fpascal-strings -Os -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Wunreachable-code -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wconditional-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -isysroot /Applications/Xcode6-Beta3.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.10 -g -fvisibility=hidden -fvisibility-inlines-hidden -Wno-sign-conversion -iquote /Users/jazka/cplusplus/bot/DerivedData/bot/Build/Intermediates/bot.build/Release/bot.build/bot-generated-files.hmap -I/Users/jazka/cplusplus/bot/DerivedData/bot/Build/Intermediates/bot.build/Release/bot.build/bot-own-target-headers.hmap -I/Users/jazka/cplusplus/bot/DerivedData/bot/Build/Intermediates/bot.build/Release/bot.build/bot-all-target-headers.hmap -iquote /Users/jazka/cplusplus/bot/DerivedData/bot/Build/Intermediates/bot.build/Release/bot.build/bot-project-headers.hmap -I/Users/jazka/cplusplus/bot/DerivedData/bot/Build/Products/Release/include -I/Applications/Xcode6-Beta3.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/jazka/cplusplus/bot/DerivedData/bot/Build/Intermediates/bot.build/Release/bot.build/DerivedSources/x86_64 -I/Users/jazka/cplusplus/bot/DerivedData/bot/Build/Intermediates/bot.build/Release/bot.build/DerivedSources -F/Users/jazka/cplusplus/bot/DerivedData/bot/Build/Products/Release -MMD -MT dependencies -MF /Users/jazka/cplusplus/bot/DerivedData/bot/Build/Intermediates/bot.build/Release/bot.build/Objects-normal/x86_64/IrcBot.d --serialize-diagnostics /Users/jazka/cplusplus/bot/DerivedData/bot/Build/Intermediates/bot.build/Release/bot.build/Objects-normal/x86_64/IrcBot.dia -c /Users/jazka/cplusplus/bot/bot/IrcBot.cpp -o /Users/jazka/cplusplus/bot/DerivedData/bot/Build/Intermediates/bot.build/Release/bot.build/Objects-normal/x86_64/IrcBot.o36"0C05099F-CF31-4D9C-9C57-C13EE3104A2D-
-bC5840BD8-517A-4A5B-BBCE-D6F21DBD13E9
-
-CCompileC DerivedData/bot/Build/Intermediates/bot.build/Release/bot.build/Objects-normal/x86_64/main.o /Users/jazka/cplusplus/bot/bot/main.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
-s426767427.818897
-e426767428.081871
-r1
-xCompileC
-xDerivedData/bot/Build/Intermediates/bot.build/Release/bot.build/Objects-normal/x86_64/main.o
-x/Users/jazka/cplusplus/bot/bot/main.cpp
-xnormal
-xx86_64
-xc++
-xcom.apple.compilers.llvm.clang.1_0.compiler
-d/Users/jazka/cplusplus/bot/bot/main.cpp
-d/Users/jazka/cplusplus/bot/bot/IrcBot.h
-o/Users/jazka/cplusplus/bot/bot/main.cpp:10:22: warning: ISO C++11 does not allow conversion from string literal to 'char *' [-Wc++11-compat-deprecated-writable-strings]
-o        IrcBot bot = IrcBot("NICK bytetrial\r\n","USER guest tolmoon tolsun :Ronnie Reagan\r\n");
-o                            ^
-o/Users/jazka/cplusplus/bot/bot/main.cpp:10:43: warning: ISO C++11 does not allow conversion from string literal to 'char *' [-Wc++11-compat-deprecated-writable-strings]
-o        IrcBot bot = IrcBot("NICK bytetrial\r\n","USER guest tolmoon tolsun :Ronnie Reagan\r\n");
-o                                                 ^
-o2 warnings generated.
-lSLF07#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection47"Compile /Users/jazka/cplusplus/bot/bot/main.cpp176"CompileC DerivedData/bot/Build/Intermediates/bot.build/Release/bot.build/Objects-normal/x86_64/main.o bot/main.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler0bb6d143f46fb941^2cf51444f46fb941^-637"/Users/jazka/cplusplus/bot/bot/main.cpp:10:22: warning: ISO C++11 does not allow conversion from string literal to 'char *' [-Wc++11-compat-deprecated-writable-strings]        IrcBot bot = IrcBot("NICK bytetrial\r\n","USER guest tolmoon tolsun :Ronnie Reagan\r\n");                            ^/Users/jazka/cplusplus/bot/bot/main.cpp:10:43: warning: ISO C++11 does not allow conversion from string literal to 'char *' [-Wc++11-compat-deprecated-writable-strings]        IrcBot bot = IrcBot("NICK bytetrial\r\n","USER guest tolmoon tolsun :Ronnie Reagan\r\n");                                                 ^2 warnings generated.2(36%IDEClangDiagnosticActivityLogMessage2@67"ISO C++11 does not allow conversion from string literal to 'char *'-426767428#18446744073709551615#0#-1#27"com.apple.dt.IDE.diagnostic23%DVTTextDocumentLocation3@46"file:///Users/jazka/cplusplus/bot/bot/main.cpp0000000000000000^9#21#9#21#99#0#1#14"Semantic Issue--2@67"ISO C++11 does not allow conversion from string literal to 'char *'-426767428#18446744073709551615#0#-1#27"com.apple.dt.IDE.diagnostic3@46"file:///Users/jazka/cplusplus/bot/bot/main.cpp0000000000000000^9#42#9#42#120#0#1#14"Semantic Issue--0#0#1#-19%DVTDocumentLocation4@46"file:///Users/jazka/cplusplus/bot/bot/main.cpp0000000000000000^3060"CompileC DerivedData/bot/Build/Intermediates/bot.build/Release/bot.build/Objects-normal/x86_64/main.o bot/main.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/jazka/cplusplus/bot    export LANG=en_US.US-ASCII    /Applications/Xcode6-Beta3.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu++11 -stdlib=libc++ -fmodules -fmodules-cache-path=/Users/jazka/cplusplus/bot/DerivedData/ModuleCache -fmodules-prune-interval=86400 -fmodules-prune-after=345600 -Wnon-modular-include-in-framework-module -Werror=non-modular-include-in-framework-module -Wno-trigraphs -fpascal-strings -Os -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Wunreachable-code -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wconditional-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -isysroot /Applications/Xcode6-Beta3.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.10 -g -fvisibility=hidden -fvisibility-inlines-hidden -Wno-sign-conversion -iquote /Users/jazka/cplusplus/bot/DerivedData/bot/Build/Intermediates/bot.build/Release/bot.build/bot-generated-files.hmap -I/Users/jazka/cplusplus/bot/DerivedData/bot/Build/Intermediates/bot.build/Release/bot.build/bot-own-target-headers.hmap -I/Users/jazka/cplusplus/bot/DerivedData/bot/Build/Intermediates/bot.build/Release/bot.build/bot-all-target-headers.hmap -iquote /Users/jazka/cplusplus/bot/DerivedData/bot/Build/Intermediates/bot.build/Release/bot.build/bot-project-headers.hmap -I/Users/jazka/cplusplus/bot/DerivedData/bot/Build/Products/Release/include -I/Applications/Xcode6-Beta3.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/jazka/cplusplus/bot/DerivedData/bot/Build/Intermediates/bot.build/Release/bot.build/DerivedSources/x86_64 -I/Users/jazka/cplusplus/bot/DerivedData/bot/Build/Intermediates/bot.build/Release/bot.build/DerivedSources -F/Users/jazka/cplusplus/bot/DerivedData/bot/Build/Products/Release -MMD -MT dependencies -MF /Users/jazka/cplusplus/bot/DerivedData/bot/Build/Intermediates/bot.build/Release/bot.build/Objects-normal/x86_64/main.d --serialize-diagnostics /Users/jazka/cplusplus/bot/DerivedData/bot/Build/Intermediates/bot.build/Release/bot.build/Objects-normal/x86_64/main.dia -c /Users/jazka/cplusplus/bot/bot/main.cpp -o /Users/jazka/cplusplus/bot/DerivedData/bot/Build/Intermediates/bot.build/Release/bot.build/Objects-normal/x86_64/main.o36"E9202209-9C99-4471-AB87-503272416EAB-
-bC5840BD8-517A-4A5B-BBCE-D6F21DBD13E9
-
-CGenerateDSYMFile /Users/jazka/cplusplus/bot/DerivedData/bot/Build/Products/Release/bot.dSYM /Users/jazka/cplusplus/bot/DerivedData/bot/Build/Products/Release/bot
-s426767428.158832
-e426767428.180753
-r1
-xGenerateDSYMFile
-x/Users/jazka/cplusplus/bot/DerivedData/bot/Build/Products/Release/bot.dSYM
-x/Users/jazka/cplusplus/bot/DerivedData/bot/Build/Products/Release/bot
-lSLF07#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection83"Generate /Users/jazka/cplusplus/bot/DerivedData/bot/Build/Products/Release/bot.dSYM107"GenerateDSYMFile DerivedData/bot/Build/Products/Release/bot.dSYM DerivedData/bot/Build/Products/Release/botd8b62844f46fb941^be4e2e44f46fb941^---0#0#1#-19%DVTDocumentLocation2@81"file:///Users/jazka/cplusplus/bot/DerivedData/bot/Build/Products/Release/bot.dSYM0034d85ddfffdf42^397"GenerateDSYMFile DerivedData/bot/Build/Products/Release/bot.dSYM DerivedData/bot/Build/Products/Release/bot    cd /Users/jazka/cplusplus/bot    /Applications/Xcode6-Beta3.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/dsymutil /Users/jazka/cplusplus/bot/DerivedData/bot/Build/Products/Release/bot -o /Users/jazka/cplusplus/bot/DerivedData/bot/Build/Products/Release/bot.dSYM36"AEE9CEA7-20E1-4621-95ED-2A6F28B1A88C-
-bC5840BD8-517A-4A5B-BBCE-D6F21DBD13E9
-
-CLd /Users/jazka/cplusplus/bot/DerivedData/bot/Build/Products/Release/bot normal x86_64
-s426767428.135813
-e426767428.157467
-r1
-xLd
-x/Users/jazka/cplusplus/bot/DerivedData/bot/Build/Products/Release/bot
-xnormal
-xx86_64
-d/Users/jazka/cplusplus/bot/DerivedData/bot/Build/Intermediates/bot.build/Release/bot.build/Objects-normal/x86_64/bot.LinkFileList
-d/Users/jazka/cplusplus/bot/DerivedData/bot/Build/Intermediates/bot.build/Release/bot.build/Objects-normal/x86_64/main.o
-d/Users/jazka/cplusplus/bot/DerivedData/bot/Build/Intermediates/bot.build/Release/bot.build/Objects-normal/x86_64/IrcBot.o
-d/Applications/Xcode6-Beta3.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk/usr/lib/libc++.dylib
-d/Applications/Xcode6-Beta3.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk/usr/lib/libSystem.dylib
-d/Applications/Xcode6-Beta3.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/6.0/lib/darwin/libclang_rt.osx.a
-d/Applications/Xcode6-Beta3.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk/usr/lib/system/libcache.dylib
-d/Applications/Xcode6-Beta3.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk/usr/lib/system/libcommonCrypto.dylib
-d/Applications/Xcode6-Beta3.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk/usr/lib/system/libcompiler_rt.dylib
-d/Applications/Xcode6-Beta3.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk/usr/lib/system/libcopyfile.dylib
-d/Applications/Xcode6-Beta3.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk/usr/lib/system/libcorecrypto.dylib
-d/Applications/Xcode6-Beta3.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk/usr/lib/system/libdispatch.dylib
-d/Applications/Xcode6-Beta3.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk/usr/lib/system/libdyld.dylib
-d/Applications/Xcode6-Beta3.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk/usr/lib/system/libkeymgr.dylib
-d/Applications/Xcode6-Beta3.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk/usr/lib/system/liblaunch.dylib
-d/Applications/Xcode6-Beta3.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk/usr/lib/system/libmacho.dylib
-d/Applications/Xcode6-Beta3.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk/usr/lib/system/libquarantine.dylib
-d/Applications/Xcode6-Beta3.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk/usr/lib/system/libremovefile.dylib
-d/Applications/Xcode6-Beta3.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk/usr/lib/system/libsystem_asl.dylib
-d/Applications/Xcode6-Beta3.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk/usr/lib/system/libsystem_blocks.dylib
-d/Applications/Xcode6-Beta3.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk/usr/lib/system/libsystem_c.dylib
-d/Applications/Xcode6-Beta3.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk/usr/lib/system/libsystem_configuration.dylib
-d/Applications/Xcode6-Beta3.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk/usr/lib/system/libsystem_coreservices.dylib
-d/Applications/Xcode6-Beta3.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk/usr/lib/system/libsystem_coretls.dylib
-d/Applications/Xcode6-Beta3.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk/usr/lib/system/libsystem_dnssd.dylib
-d/Applications/Xcode6-Beta3.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk/usr/lib/system/libsystem_info.dylib
-d/Applications/Xcode6-Beta3.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk/usr/lib/system/libsystem_kernel.dylib
-d/Applications/Xcode6-Beta3.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk/usr/lib/system/libsystem_m.dylib
-d/Applications/Xcode6-Beta3.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk/usr/lib/system/libsystem_malloc.dylib
-d/Applications/Xcode6-Beta3.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk/usr/lib/system/libsystem_network.dylib
-d/Applications/Xcode6-Beta3.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk/usr/lib/system/libsystem_networkextension.dylib
-d/Applications/Xcode6-Beta3.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk/usr/lib/system/libsystem_notify.dylib
-d/Applications/Xcode6-Beta3.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk/usr/lib/system/libsystem_platform.dylib
-d/Applications/Xcode6-Beta3.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk/usr/lib/system/libsystem_pthread.dylib
-d/Applications/Xcode6-Beta3.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk/usr/lib/system/libsystem_sandbox.dylib
-d/Applications/Xcode6-Beta3.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk/usr/lib/system/libsystem_secinit.dylib
-d/Applications/Xcode6-Beta3.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk/usr/lib/system/libsystem_stats.dylib
-d/Applications/Xcode6-Beta3.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk/usr/lib/system/libsystem_trace.dylib
-d/Applications/Xcode6-Beta3.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk/usr/lib/system/libunc.dylib
-d/Applications/Xcode6-Beta3.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk/usr/lib/system/libunwind.dylib
-d/Applications/Xcode6-Beta3.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk/usr/lib/system/libxpc.dylib
-lSLF07#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection74"Link /Users/jazka/cplusplus/bot/DerivedData/bot/Build/Products/Release/bot59"Ld DerivedData/bot/Build/Products/Release/bot normal x86_6418d12244f46fb941^7a502844f46fb941^---0#0#1#--935"Ld DerivedData/bot/Build/Products/Release/bot normal x86_64    cd /Users/jazka/cplusplus/bot    export MACOSX_DEPLOYMENT_TARGET=10.10    /Applications/Xcode6-Beta3.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ -arch x86_64 -isysroot /Applications/Xcode6-Beta3.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk -L/Users/jazka/cplusplus/bot/DerivedData/bot/Build/Products/Release -F/Users/jazka/cplusplus/bot/DerivedData/bot/Build/Products/Release -filelist /Users/jazka/cplusplus/bot/DerivedData/bot/Build/Intermediates/bot.build/Release/bot.build/Objects-normal/x86_64/bot.LinkFileList -mmacosx-version-min=10.10 -stdlib=libc++ -Xlinker -dependency_info -Xlinker /Users/jazka/cplusplus/bot/DerivedData/bot/Build/Intermediates/bot.build/Release/bot.build/Objects-normal/x86_64/bot_dependency_info.dat -o /Users/jazka/cplusplus/bot/DerivedData/bot/Build/Products/Release/bot36"0A1118EC-C5C1-4E9F-B50B-C74A9E8A1D4F-
-bC5840BD8-517A-4A5B-BBCE-D6F21DBD13E9
-
