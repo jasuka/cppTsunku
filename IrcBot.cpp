@@ -157,8 +157,7 @@ bool IrcBot::sendData(std::string msg)
 {
 	
     msg.append("\r\n");
-	unsigned long len = msg.length();
-	unsigned long bytes_sent = send(s,msg.c_str(),len,0);
+	unsigned long bytes_sent = send(s,msg.c_str(),msg.length(),0);
 
 	if (bytes_sent == 0)
 		return false;
