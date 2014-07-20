@@ -1,5 +1,5 @@
-CC=g++
-CFLAGS= -O2 -std=c++0x -Wall -I.
+CXX = g++
+CXXFLAGS = -Wall -Wextra -pedantic-errors -std=c++0x
 DEPS = IrcBot.h
 OBJ = IrcBot.o main.o 
 
