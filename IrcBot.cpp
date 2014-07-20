@@ -32,7 +32,7 @@
 #define MAXDATASIZE 100
 
 
-IrcBot::IrcBot(const char * _nick, const char * _usr)
+IrcBot::IrcBot(const char *_nick, const char *_usr)
 {
 	nick = _nick;
 	usr = _usr;
@@ -142,11 +142,11 @@ void IrcBot::start()
 std::string IrcBot::timeNow()
 {
 	time_t rawtime;
-	struct tm * timeinfo;
+	struct tm *timeinfo;
     char buffer[80];
 
-	time ( &rawtime );
-	timeinfo = localtime ( &rawtime );
+	time (&rawtime);
+	timeinfo = localtime (&rawtime);
     strftime (buffer,80,"%H:%M:%S",timeinfo);
     std::string time = buffer;
     return time;

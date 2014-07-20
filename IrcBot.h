@@ -17,7 +17,7 @@
 class IrcBot
 {
 public:
-	IrcBot(const char * _nick, const char * _usr);
+	IrcBot(const char *_nick, const char *_usr);
 	virtual ~IrcBot();
 
 	bool setup;
