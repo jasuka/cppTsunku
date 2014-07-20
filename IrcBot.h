@@ -26,7 +26,7 @@ public:
 
 private:
 	const char *port;
-	unsigned int s; //the socket descriptor
+	int s; //the socket descriptor
 
 	const char *nick;
 	const char *usr;
