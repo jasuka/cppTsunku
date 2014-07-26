@@ -18,6 +18,5 @@ DerivedData
 tags
 
 cppTsunku
-main.o
-IrcBot.o
+*.o
 

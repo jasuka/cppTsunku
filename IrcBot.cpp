@@ -27,6 +27,7 @@
 #include <sys/wait.h>
 #include <signal.h>
 #include <time.h>
+#include "cstd.h"
 
 
 #define MAXDATASIZE 100
@@ -86,7 +87,7 @@ void IrcBot::start()
 
 	//Recv some data
 	long numbytes;
-	char buf[MAXDATASIZE];
+	char buf[MAXDATASIZE];	;
     std::vector<std::string> words;
 
 	unsigned int count = 0;
@@ -112,7 +113,7 @@ void IrcBot::start()
 		numbytes = recv(s,buf,MAXDATASIZE-1,0);
 		buf[numbytes]='\0';
         words = splitWords(buf);
-        
+
         //Pass buf to the message handeler
         msgHandle(words);
         
@@ -120,11 +121,14 @@ void IrcBot::start()
         if (words.size() > 0)
         {
             if (words[0].compare("PING") == 0)
+            {
                 sendData("PONG " + words[1]);
+            	std::cout << "DEBUG: pong sent: " << words[1] << std::endl;
+            }
         }
         
         //buf is the data that is recived
-        std::cout << timeNow() << " " << buf;
+        //std::cout << timeNow() << " " << buf;
 
 
 		//break if connection closed
@@ -171,25 +175,27 @@ void IrcBot::msgHandle(std::vector<std::string> words)
 	/*
 	 * TODO: add you code to respod to commands here
     */
+	
     if (words.size() >= 4)
     {
         std::string chan = words[2];
-        if (words[3].compare(":homo") == 0)
+
+        if (words[3] == ":homo")
         {
             sendData("PRIVMSG " + chan + " :ite oot!");
         }
-        if (words[3].compare(":!quit") == 0)
+        if (words[3] == ":!quit")
         {
             sendData("PRIVMSG " + chan + " :Nyt mie lähen!");
             sendData("QUIT :Soronoo!");
             close (s);
             std::exit(0);
         }
-        if (words[3].compare(":!time") == 0)
+        if (words[3] == ":!time")
         {
             sendData("PRIVMSG " + chan + " :The local time is: " + timeNow());
         }
-        if (words.size() == 5 && words[3].compare(":!nick") == 0)
+        if (words.size() == 5 && words[3] == ":!nick")
         {
             nick = words[4].c_str();
             sendData("NICK " + std::string(nick));
@@ -202,7 +208,7 @@ void IrcBot::msgHandle(std::vector<std::string> words)
 // Split sentence to words
 std::vector<std::string> IrcBot::splitWords(char *buf)
 {
-    std::string str(buf);
+    /**std::string str(buf);
     std::istringstream stm(str);
     std::vector<std::string> words;
     std::string word;
@@ -212,6 +218,11 @@ std::vector<std::string> IrcBot::splitWords(char *buf)
         words.push_back(word);
         
     }
+	--THIS IS REPLACED WITH Cstd::explode();--
+    **/
+    std::vector<std::string> words;
+    words = Cstd::explode(buf, " ");
     return words;
 }
+
 
