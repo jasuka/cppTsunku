@@ -1,4 +1,9 @@
 /**
+  cstd.cpp
+ 
+    Created on: 26 Jul 2014
+       Author: hrna
+
 	EXPLODE as seen in PHP
 	Usage of the explode function as follows:
 

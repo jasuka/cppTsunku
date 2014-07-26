@@ -1,3 +1,10 @@
+/**
+  cstd.cpp
+ 
+    Created on: 26 Jul 2014
+       Author: hrna
+       
+ **/
 #ifndef __CSTD__
 #define __CSTD__
 
