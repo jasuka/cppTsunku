@@ -179,7 +179,7 @@ void IrcBot::msgHandle(std::vector<std::string> words)
     if (words.size() >= 4)
     {
         std::string chan = words[2];
-
+        if (words[3].compare(":kettu") == 0) { sendData("PRIVMSG "+ chan +" :kettu sanottu!"); }
         if (words[3] == ":homo")
         {
             sendData("PRIVMSG " + chan + " :ite oot!");

@@ -15,7 +15,7 @@
 
 class Cstd {
 public:
-	static std::vector<std::string> explode(std::string input, const char *seperator);
+	static std::vector<std::string> explode(std::string input, const char *separator);
 };
 
 #endif

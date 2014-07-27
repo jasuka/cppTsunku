@@ -14,7 +14,7 @@
 
 	myvar[1] would be "random".
 
-	It still bugs if the seperator is something else than a whitespace
+	It still bugs if the separator is something else than a whitespace
 
 	compile: g++ -std=c++11 main.cpp cstd.cpp -o cstd
 
@@ -23,7 +23,7 @@
 **/
 #include "cstd.h"
 
-std::vector<std::string> Cstd::explode(std::string input, const char *seperator) {
+std::vector<std::string> Cstd::explode(std::string input, const char *separator) {
 
 	std::vector<std::string> saveVctr;
 	std::string saveStr;
@@ -37,13 +37,13 @@ std::vector<std::string> Cstd::explode(std::string input, const char *seperator)
 
 	for (unsigned int i = 0; i < input.size(); ++i)
 	{
-		if (input[i] != *seperator)
+		if (input[i] != *separator)
 		{
 			saveStr += input[i];
 		} else {
 			saveVctr.push_back (saveStr);
 			saveStr.clear();
-			//saveStr += input[i]; 	//cases where seperator is something else than ' '...
+			//saveStr += input[i]; 	//cases where separator is something else than ' '...
 									//dont really know how would i deal with it..
 		}
 	}
