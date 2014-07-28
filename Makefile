@@ -1,13 +1,13 @@
 CXX = g++
 CXXFLAGS = -Wall -Wextra -pedantic-errors -std=c++0x
-DEPS = src/IrcBot.h cstrlib/cstrlib.h
-OBJ = src/IrcBot.o cstrlib/cstrlib.o src/main.o 
+DEPS = src/IrcBot.h src/cstrlib/cstrlib.h
+OBJ = src/IrcBot.o src/main.o src/cstrlib/cstrlib.o
 
 %.o: %.c $(DEPS)
-	$(CC) -c -o $@ $< $(CFLAGS)
+	$(CC) -c -o $@ $< $(CXXFLAGS)
 
 cppTsunku: $(OBJ)
-	g++ -o $@ $^ $(CFLAGS)
-clean:
-	rm *.o
-	rm cppTsunku
+	g++ -o $@ $^ $(CXXFLAGS)
+#clean:
+#	rm *.o
+#	rm cppTsunku

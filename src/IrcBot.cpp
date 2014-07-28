@@ -27,7 +27,7 @@
 #include <sys/wait.h>
 #include <signal.h>
 #include <time.h>
-#include "../cstrlib/cstrlib.h"
+#include "cstrlib/cstrlib.h"
 
 
 #define MAXDATASIZE 100
