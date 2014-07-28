@@ -1,7 +1,7 @@
 CXX = g++
 CXXFLAGS = -Wall -Wextra -pedantic-errors -std=c++0x
-DEPS = IrcBot.h cstd.h
-OBJ = IrcBot.o cstd.o main.o 
+DEPS = src/IrcBot.h cstrlib/cstrlib.h
+OBJ = src/IrcBot.o cstrlib/cstrlib.o src/main.o 
 
 %.o: %.c $(DEPS)
 	$(CC) -c -o $@ $< $(CFLAGS)
