@@ -29,5 +29,5 @@ move:
 
 clean:
 	@rm -rf $(ODIR)
-	@rm $(TARGET
+	@rm $(TARGET)
 	@echo "Clean complited"
