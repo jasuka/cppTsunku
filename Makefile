@@ -28,5 +28,6 @@ move:
 	@echo "Object files moved successfully to $(ODIR) from source tree"
 
 clean:
-	rm -rf $(ODIR)
-	rm $(TARGET
+	@rm -rf $(ODIR)
+	@rm $(TARGET
+	@echo "Clean complited"
