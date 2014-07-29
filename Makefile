@@ -14,6 +14,7 @@ all: $(ODIR) $(TARGET)
 $(ODIR):
 	mkdir $(ODIR)
 
+#Is this needed? it doesnt even seem to be using this
 $(ODIR)/%.o: %.c $(DEPS)
 	$(CC) -c -o $(ODIR)/$@ $< $(CCFLAGS)
 
@@ -28,4 +29,4 @@ move:
 
 clean:
 	rm -rf $(ODIR)
-	rm $(TARGET)
+	rm $(TARGET
