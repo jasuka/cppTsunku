@@ -1,27 +1,32 @@
 CC = g++
 CCFLAGS = -Wall -Wextra -pedantic-errors -std=c++0x
 ODIR = obj
-DEPS = src/IrcBot.h src/cstrlib/cstrlib.h
-OBJ = src/IrcBot.o src/main.o src/cstrlib/cstrlib.o
+SOURCE = src
+
+DEPS = 	$(SOURCE)/IrcBot.h $(SOURCE)/cstrlib/cstrlib.h
+
+OBJ = 	$(SOURCE)/IrcBot.o $(SOURCE)/main.o $(SOURCE)/cstrlib/cstrlib.o
+
 
 TARGET = cppTsunku
 
-all: $(ODIR) $(TARGET) move 
+all: $(ODIR) $(TARGET)
 
 $(ODIR):
 	mkdir $(ODIR)
 
-%.o: %.c $(DEPS)
-	$(CC) $(CCFLAGS) -c $< -o $@ 
+$(ODIR)/%.o: %.c $(DEPS)
+	$(CC) -c -o $(ODIR)/$@ $< $(CCFLAGS)
 
 $(TARGET): $(OBJ)
 	$(CC) $(CCFLAGS) -o $@ $^
 
 move:
-	for file in $(OBJ); do\
+	@for file in $(OBJ); do\
 		mv $$file $(ODIR);\
 	done
+	@echo "Object files moved successfully to $(ODIR) from source tree"
 
-#clean:
-#	rm *.o
-#	rm cppTsunku
+clean:
+	rm -rf $(ODIR)
+	rm $(TARGET)
