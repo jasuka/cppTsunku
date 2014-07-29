@@ -4,7 +4,6 @@ ODIR = obj
 SOURCE = src
 
 DEPS = 	$(SOURCE)/IrcBot.h $(SOURCE)/cstrlib/cstrlib.h
-
 OBJ = 	$(SOURCE)/IrcBot.o $(SOURCE)/main.o $(SOURCE)/cstrlib/cstrlib.o
 
 
